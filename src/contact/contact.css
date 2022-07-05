@@ -1,0 +1,278 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbede0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Section */
+.header {
+    height: 7vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.header__logo {
+    display: grid;
+    align-items: center;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+}
+
+#header__logo {
+    width: 6vh;
+}
+
+.header__nav {
+    display: grid;
+    align-items: center;
+}
+
+.header__nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    list-style-type: none;
+}
+
+.header__nav ul li {
+    display: flex;
+    gap: 5px;
+    height: 100%;
+}
+
+.header__nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav__img {
+    max-width: 20px;
+    height: 20px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 15vh;
+}
+
+#contact__name,
+#contact__email {
+    width: 300px;
+    height: 50px;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#contact__message {
+    width: 400px;
+    height: 100px;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#contact__btn {
+    width: 300px;
+    height: 40px;
+    background-color: ghostwhite;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Footer Section */
+.footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: black;
+    margin-top: 15rem;
+}
+
+.footer__links {
+    margin-top: 4rem;
+}
+
+.footer__links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.footer__links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer__socialMedia ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.footer__socialMedia ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.footer__iconsMadeBy {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer__iconsMadeBy a {
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/* ================= MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (min-width: 200px) and (max-width: 900px) {
+
+    /* Media (SMALL DEVICES) Header Section */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__nav ul {
+        gap: 1rem;
+    }
+
+    .nav__img {
+        display: none;
+    }
+
+    .header__nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Media (SMALL DEVICES) Contact Section */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10vw;
+    }
+
+    .contact>h2 {
+        font-size: 2rem;
+    }
+
+    #contact__name,
+    #contact__email {
+        width: 80%;
+    }
+
+    #contact__message {
+        width: 100%
+    }
+
+    #contact__btn {
+        height: 80px;
+    }
+
+    /* Media (SMALL DEVICES) Footer Section */
+    .footer__links ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__iconsMadeBy a {
+        font-size: 0.75rem;
+    }
+}
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+
+    /* Media (MEDIUM DEVICES) Header Section  */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__nav ul {
+        gap: 1rem;
+    }
+
+    .header__nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .nav__img {
+        display: none;
+    }
+
+    /* Media (MEDIUM DEVICES) Footer Section */
+    .footer__links ul {
+        gap: 40px;
+    }
+
+    .footer__links ul li a {
+        font-size: 2rem;
+    }
+
+    .footer__iconsMadeBy a {
+        font-size: 1rem;
+    }
+
+    .footer__socialMedia ul li a {
+        font-size: 3rem;
+    }
+
+}
